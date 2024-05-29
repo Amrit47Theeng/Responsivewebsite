@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueRex Creative Agency</title>
+    <meta name="description" content="BlueRex - The best creative agency turning your creative ideas into your business success." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="BlueRex Logo" class="logo1" />
+          <h2>BlueRex</h2>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="center">
+        <div class="text">
+          <h2>We are the best creative agency</h2>
+          <h1>We turn your creative ideas into your business</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            nostrum nisi, corporis harum quisquam velit vero similique maiores eum
+            nulla.
+          </p>
+          <button id="btn1">Explore Now</button>
+          <button id="btn2">Contact Us</button>
+        </div>
+        <img src="images/man.png" alt="Man illustration" class="man" />
+      </section>
+      <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+          <p>"BlueRex transformed our business with their creative ideas and professional approach. Highly recommend!"</p>
+          <h3>- Client A</h3>
+        </div>
+        <div class="testimonial">
+          <p>"The team at BlueRex is top-notch. They helped us achieve our goals efficiently and effectively."</p>
+          <h3>- Client B</h3>
+        </div>
+        <div class="testimonial">
+          <p>"Innovative, reliable, and outstanding service. BlueRex is the best agency we've worked with."</p>
+          <h3>- Client C</h3>
+        </div>
+      </section>
+    </main>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.menu ul');
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
